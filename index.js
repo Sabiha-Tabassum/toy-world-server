@@ -64,6 +64,9 @@ async function run() {
 
     app.get('/collection/:text', async(req,res) => {
          console.log(req.params.text);
+         if(req.params.text == 'Hot Wheels' || req.params.text == 'Lego Police Car' || req.params.text == 'Matchbox Police Cruiser' || req.params.text == 'Ferrari' || req.params.text == 'Porsche' || req.params.text == 'Lamborghini' || req.params.text == 'Tonka' || req.params.text == 'Bruder' || req.params.text == 'Hess' ) {
+            
+         }
     })
 
 
