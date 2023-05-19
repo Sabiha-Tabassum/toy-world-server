@@ -45,11 +45,11 @@ async function run() {
           res.send(result);
     })
 
-    app.get('/addToy', async(req,res) => {
+    // app.get('/addToy', async(req,res) => {
        
-        const result = await addToyCollection.find().limit(20).toArray();
-        res.send(result);
-    })
+    //     const result = await addToyCollection.find().limit(20).toArray();
+    //     res.send(result);
+    // })
 
 
     app.get('/addToy', async(req,res) => {
