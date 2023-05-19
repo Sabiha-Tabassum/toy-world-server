@@ -62,6 +62,10 @@ async function run() {
         res.send(result);
     })
 
+    app.get('/collection/:text', async(req,res) => {
+         console.log(req.params.text);
+    })
+
 
 
     // Send a ping to confirm a successful connection
