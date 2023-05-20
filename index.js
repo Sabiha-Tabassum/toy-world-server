@@ -45,11 +45,11 @@ async function run() {
           res.send(result);
     })
 
-    // app.get('/addToy', async(req,res) => {
+    app.get('/addToy', async(req,res) => {
        
-    //     const result = await addToyCollection.find().limit(20).toArray();
-    //     res.send(result);
-    // })
+        const result = await addToyCollection.find().limit(20).toArray();
+        res.send(result);
+    })
 
 
     app.get('/addToy', async(req,res) => {
@@ -62,12 +62,12 @@ async function run() {
         res.send(result);
     })
 
-    app.get('/collection/:text', async(req,res) => {
-         console.log(req.params.text);
-         if(req.params.text == 'Hot Wheels' || req.params.text == 'Lego Police Car' || req.params.text == 'Matchbox Police Cruiser' || req.params.text == 'Ferrari' || req.params.text == 'Porsche' || req.params.text == 'Lamborghini' || req.params.text == 'Tonka' || req.params.text == 'Bruder' || req.params.text == 'Hess' ) {
+    // app.get('/collection/:text', async(req,res) => {
+    //      console.log(req.params.text);
+    //      if(req.params.text == 'Hot Wheels' || req.params.text == 'Lego Police Car' || req.params.text == 'Matchbox Police Cruiser' || req.params.text == 'Ferrari' || req.params.text == 'Porsche' || req.params.text == 'Lamborghini' || req.params.text == 'Tonka' || req.params.text == 'Bruder' || req.params.text == 'Hess' ) {
             
-         }
-    })
+    //      }
+    // })
 
 
 
